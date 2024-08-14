@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formlulir Isian</h1>
+    <form action="/daftar" method="post">
+        <table>
+            <div>
+                <tr>
+                    <td><label for="name">Nama Lengkap</label></td>
+                    <td><input type="text" placeholder="Nama" id="name" name="name"></td>
+                </tr>
+            </div>
+            
+            <div>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" placeholder="Email" id="email" name="email"></td>
+                </tr>
+            </div>
+            
+            <div>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" placeholder="Password" id="password" name="password"></td>
+                </tr>
+            </div>
+            
+            <div>
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td><input type="number" placeholder="Phone" id="phone" name="phone"></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td><button type="submit">Masuk</button></td>
+                    <td><button type="button">Tombol Biasa</button></td>
+                    <td><input type="button" name="" id="" value="Daftar"></td>
+                </tr>
+            </div>
+        </table>
+
+    </form>
+    <hr>
+    <form action="/order">
+        <h1>Pesanan</h1>
+        <label for="">Baju : </label>
+        <div>
+            <input type="radio" name="Baju" id="" value="Kemeja" checked><label for="">Kemeja</label>   
+            <input type="radio" name="Baju" id="" value="Kaos"><label for="">Kaos</label>
+        </div>
+        <div>
+            <label for="">Ukuran</label>
+            <select name="Ukuran" id="Ukuran">
+                <option value="s">Shall</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+        <div>
+            <label for="term">Sesuai Pemesanan</label>
+            <input type="checkbox" name="term" id="term" value="True">
+        </div>
+        <div>
+            <p>
+                <label for="notes">Catatan</label>
+            </p>
+            <textarea name="notes" id="notes" cols="50" rows="7"></textarea>
+        </div>
+        <button type="submit">Order</button>
+    </form>
+
+    <hr>
+
+    <h1>Validasi</h1>
+    <form action="valid">
+        <input type="text" name="input" id="" required minlength="3" maxlength="5">
+        <button type="submit">Kirim</button>
+    </form>
+
+
+
+</body>
+</html>
